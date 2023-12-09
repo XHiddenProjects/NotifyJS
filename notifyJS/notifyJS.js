@@ -53,11 +53,11 @@ class NotifyJS{
             console.error('setSilence[0] must be a boolean!');
         }
     }
-    setVibrate(set=false){
-        if(typeof set==='boolean'){
-            this.set = set;
+    setVibrate(start1=200,stop=100,start2=200){
+        if(typeof start1==='number'||typeof stop==='number'||typeof start2==='number'){
+            this.vibrate = [start1, stop, start2];
         }else{
-            console.error('setVibrate[0] must be a boolean!');
+            console.error('setVibrate[0], setVibrate[1], and setVibrate[2] must be a number!');
         }
     }
     setLang(lang='en-US'){
