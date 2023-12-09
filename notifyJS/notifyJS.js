@@ -103,14 +103,24 @@ class NotifyJS{
         }
     }
     push(){
-        const options = {
-            body: this.body,
-            icon: this.icon,
-            silent: this.silent,
-            vibrate: this.vibrate,
-            lang: this.lang,
-            renotify: this.renotify
-        };
+        if(silent){
+            const options = {
+                body: this.body,
+                icon: this.icon,
+                silent: this.silent,
+                lang: this.lang,
+                renotify: this.renotify
+            };
+        }else{
+            const options = {
+                body: this.body,
+                icon: this.icon,
+                vibrate: this.vibrate,
+                lang: this.lang,
+                renotify: this.renotify
+            };
+        }
+        
         const setNotifier = new Notification(this.title, options);
 
         if(typeof this.click!=='undefined') setNotifier.addEventListener('click', this.click);
