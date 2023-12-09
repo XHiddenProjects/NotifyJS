@@ -53,9 +53,9 @@ class NotifyJS{
             console.error('setSilence[0] must be a boolean!');
         }
     }
-    setVibrate(vibrate=false){
-        if(typeof vibrate==='boolean'){
-            this.vibrate = vibrate;
+    setVibrate(set=false){
+        if(typeof set==='boolean'){
+            this.set = set;
         }else{
             console.error('setVibrate[0] must be a boolean!');
         }
