@@ -103,8 +103,9 @@ class NotifyJS{
         }
     }
     push(){
+        let options;
         if(this.silent){
-            const options = {
+            options = {
                 body: this.body,
                 icon: this.icon,
                 silent: this.silent,
@@ -112,7 +113,7 @@ class NotifyJS{
                 renotify: this.renotify
             };
         }else{
-            const options = {
+            options = {
                 body: this.body,
                 icon: this.icon,
                 vibrate: this.vibrate,
