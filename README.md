@@ -5,7 +5,7 @@ NotifyJS makes desktop notifications easier and ready to use with customization 
 Create a variable that will allow you to set up a notification
 ```js
 let notify = new NotifyJS();
-if(notify.requestPermission()){//Request for users information
+if(notify.requestPermission()){//Request for users acceptence/rejection
 //successful request
 }else{
 //Unsuccessful request
