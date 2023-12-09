@@ -25,5 +25,7 @@ Here are some extra options you can do as well
 ```js
 $notify.setSilence(set=false);//Silences the notification
 $notify.setVibrate(set=false);//Vibrates the notification
+$notify.setLang(lang='en-US');//Changes the notification language
+$notify.setCloseTime(time=3);//Closing time(3 seconds)
 ```
 
