@@ -26,6 +26,21 @@ Here are some extra options you can do as well
 $notify.setSilence(set=false);//Silences the notification
 $notify.setVibrate(set=false);//Vibrates the notification
 $notify.setLang(lang='en-US');//Changes the notification language
-$notify.setCloseTime(time=3);//Closing time(3 seconds)
+$notify.setCloseTime(time=3);//Closing time for the notification(3 seconds)
+```
+
+### Events
+Here are some events you can use for the notifications as well
+```js
+$notify.click(func);//Runs a function when the notification is clicked
+$notify.closed(func);//Runs a function when the notification is closed
+$notify.error(func);//Runs a function when the notification has an error
+$notify.show(func);//Runs a function when the notification is showing
+```
+
+### Executing the notifications
+To execute the function, you will have to push it by writting this
+```js
+$notify.push();//Executes the notification
 ```
 
