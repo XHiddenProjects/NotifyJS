@@ -25,21 +25,21 @@ class NotifyJS{
     getPermission(){
         return Notification.permission;
     }
-    title(title='NotifyJS'){
+    setTitle(title='NotifyJS'){
         if(typeof title==='string'){
             this.title = title;
         }else{
             console.error('title[0] must be a string!');
         }
     }
-    body(txt=''){
+    setBody(txt=''){
         if(typeof txt==='string'){
             this.body = txt;
         }else{
             console.error('body[0] must be a string!');
         }
     }
-    icon(path=''){
+    setIcon(path=''){
         if(typeof path==='string'){
             this.icon = path;
         }else{
