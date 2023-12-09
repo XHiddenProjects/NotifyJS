@@ -16,9 +16,9 @@ if(notify.requestPermission()){//Request for users acceptence/rejection
 ### Title, Body, and icon
 To do this you would have to declare a function that will setup your _title_, _body_, and _icon_
 ```js
-notify.title(title='NotifyJS');//Sets a title
-notify.body(txt='');//Sets the body
-notify.icon(path='');//Sets the icon
+notify.setTitle(title='NotifyJS');//Sets a title
+notify.setBody(txt='');//Sets the body
+notify.setIcon(path='');//Sets the icon
 ```
 
 ### Extras
