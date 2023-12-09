@@ -67,7 +67,7 @@ class NotifyJS{
             console.error('setLang[0] must be a string!');
         }
     }
-    setCloseTime(time){
+    setCloseTime(time=3){
         if(typeof time==='number'){
             this.timeOut = parseInt(time+'000');
         }else{
