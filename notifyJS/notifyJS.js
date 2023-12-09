@@ -103,7 +103,7 @@ class NotifyJS{
         }
     }
     push(){
-        if(silent){
+        if(this.silent){
             const options = {
                 body: this.body,
                 icon: this.icon,
