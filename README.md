@@ -10,6 +10,7 @@ if(notify.requestPermission()){//Request for users acceptence/rejection
 }else{
 //Unsuccessful request
 }
+//Use "notify.getPermission()" to return the permission status.
 ```
 
 ### Title, Body, and icon
