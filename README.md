@@ -36,7 +36,7 @@ Here are some events you can use for the notifications as well
 notify.click(func);//Runs a function when the notification is clicked
 notify.closed(func);//Runs a function when the notification is closed
 notify.error(func);//Runs a function when the notification has an error
-notify.show(func);//Runs a function when the notification is showing
+notify.showed(func);//Runs a function when the notification is showing
 ```
 
 ### Executing the notifications
