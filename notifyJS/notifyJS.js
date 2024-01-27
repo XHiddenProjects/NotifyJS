@@ -9,7 +9,7 @@ class NotifyJS{
             this.renotify=false;
             this.timeOut = 3000;
             this.granted = false;
-            this.lang = 'en-US';
+            this.lang = navigator.language;
             this.click;
             this.close;
             this.error;
